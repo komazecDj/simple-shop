@@ -68,17 +68,28 @@ div .search-holder .search-form {
   margin-bottom: 10px;
 }
 
-div.search-holder .search-form .form-control {
-  display: block;
-  width: 140px;
-  height: 24px;
+.search-holder .form-control {
+  width: 30px;
   border: none;
-  border-bottom: 1px solid #ccc;
-  padding-right: 20px;
-  padding-left: 4px;
-  padding-top: 3px;
-  border-radius: 0;
-  box-shadow: none;
+  background-color: #f8f9fa;
+  transition: width 0.5s ease-in-out;
+}
+
+.search-holder .form-control:focus {
+  width: 200px;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  transition: width 0.5s ease-in-out;
+}
+
+.search-holder i {
+  font-size: 20px;
+  position: relative;
+  margin-top: 8px;
+  width: 0;
+  margin-left: 5px;
+  right: 36px;
+  pointer-events: none;
 }
 
 button.btn {
